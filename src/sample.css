@@ -1,0 +1,33 @@
+  animation-name: nav-link-load;
+  animation-duration: 800ms;
+  animation-timing-function: ease-in;
+  animation-delay: var(--nav-link-load-time);
+  transform: scale(0);
+  animation-fill-mode: forwards;
+
+  @keyframes nav-link-load {
+  0%{
+    transform: scale(0);
+  }
+  90% {
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+
+<p>Here some certificates i had from Udemy:</p>
+          <ol className="links">
+            <li>
+              <Link className="link" to="/completeguide">
+                 The Complete Guide of React Course [2020].
+              </Link>
+            </li>
+            <li>
+              <Link className="link" to="/modern">
+                 Modern React with Redux Course [2020].
+              </Link>
+            </li>
+          </ol>
